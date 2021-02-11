@@ -5,10 +5,10 @@
       \ \ \  | |____ _| |_| |\  | |__| |  | |___| |__| | |\  | |\  | |___| |____   | |     / / / 
        \_\_\  \_____|_____|_| \_|\___\_\   \_____\____/|_| \_|_| \_|______\_____|  |_|    /_/_/  
 # Containerization
-Welcome to the first edition of CINQ Connect! During this course you will learn the basics of using containers. Therefore the focus will be toward the actual images and containers not the application running in it. 
+Welcome to the first edition of CINQ Connect! During this course you will learn the basics of building images, running containers and a bit of troubleshooting. 
 
 ## Prerequisites
-- Visual Studio Code
+- [Visual Studio Code](https://code.visualstudio.com/download)
 - Visual Studio Code [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 The course is divided into 4 parts.
