@@ -36,7 +36,7 @@ The course is divided into 4 parts.
 - Click `Open Folder`
 - Select `cinqconnect`
 - Click `Ok`
-> If you do not have a Terminal windows at the bottom of your editor open a new one by using the shotcut `Control + `\`
+> If you do not have a Terminal windows at the bottom of your editor open a new one by using the shotcut `Control + `
 
 ## 1. Building images
 Go to the directory `building-images`. There are 3 Dockerfiles and 1 directory called `code`
@@ -84,9 +84,11 @@ docker run -p 8080:8080 cc:manual
 
 </details>
 
-To validate if the application is running correct you can open a Browser and go to http://[IP]/api/v1/int. It should return a random integer.  
+To validate if the application is running correct you can open a Browser and go to http://[IP]:8080/api/v1/int. It should return a random integer.  
 
-> You console is now tied to the container. To exit the container (and kill it) press `ctrl + c`  
+> You console is now tied to the container. To exit the container (and kill it) press `ctrl + c`
+
+Kill the container to continue `ctrl + c` 
 
 ### Dockerfile.build
 This Dockerfile will also build the application. It does this by installing Maven into the (temporary) image.
@@ -120,7 +122,7 @@ Build using `docker build` use the tag `cc:buildstages` and use the current path
 
 To verify if the image works run the image just like before but use the tag `cc:buildstages`. 
 
-Now, if you check the size of the image it will be a lot smaller `docker images cc:buidstages`
+Now, if you check the size of the image it will be a lot smaller `docker images cc:buildstages`
 
 ## Troubleshooting
 The directory `troubleshooting` contains more or less the same Dockerfiles as `building-images` except for some small issues. Try to build the images and find out what's wrong with them en verify if the application is running correctly by using your browser.
