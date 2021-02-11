@@ -54,7 +54,7 @@ To build the application go to the terminal window and `cd` into the `building-i
 <details><summary>spoiler</summary>
 
 ```shell
-cd building-images
+cd building-images/code
 mvn clean install
 ```
 
