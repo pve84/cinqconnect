@@ -11,7 +11,7 @@ Welcome to the first edition of CINQ Connect! During this course you will learn 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - Visual Studio Code [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-The course is divided into 4 parts.
+The course is divided into 3 parts.
 1. Builing images
     * Exploring the Dockerfile
     * Building the image
