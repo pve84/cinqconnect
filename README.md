@@ -49,13 +49,13 @@ As can be seen at line 6 a file will be copied to the image. We need to provide 
 Open `Dockerfile` and read the comments.
 
 #### Building the application  
-To build the application go to the terminal window and `cd` into the `building-images/code` directory and enter the `mvn` command to start the build.
+To build the application go to the terminal window and `cd` into the `building-images` directory and enter the `mvn` command to start the build.
 
 <details><summary>spoiler</summary>
 
 ```shell
-cd building-images/code
-mvn clean install
+cd building-images
+mvn clean install -f ./code
 ```
 
 </details>
