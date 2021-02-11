@@ -51,13 +51,12 @@ Open `Dockerfile` and read the comments.
 #### Building the application  
 To build the application go to the terminal window and `cd` into the `building-images` directory and enter use the `mvn` command to start the build.
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
 
-    ```shell
-    cd building-images
-    mvn clean install
-    ```
+```shell
+cd building-images
+mvn clean install
+```
 
 </details>
 
@@ -66,26 +65,25 @@ This will take a while but the result is a file called `api-0.0.2-SNAPSHOT.war` 
 #### Building the image
 Now we can build the image. To start the build use `docker build`. Use the tag `cc:manual` and the current path as build context.
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
 
-    ```shell
-    docker build -t cc:manual .
-    ``` 
+```shell
+docker build -t cc:manual .
+``` 
 
 </details>
 
 #### Start a new container using the new image
 Use `docker run` to start a new container and be sure to export port `8080`.
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
 
-    ```shell
-    docker run -p 8080:8080 cc:manual
-    ``` 
+```shell
+docker run -p 8080:8080 cc:manual
+``` 
 
 </details>
+
 To validate if the application is running correct you can open a Browser and go to http://[IP]/api/v1/int. It should return a random integer.  
 
 > You console is now tied to the container. To exit the container (and kill it) press `ctrl + c`  
@@ -99,12 +97,11 @@ Open `Dockerfile.build` and read the comments.
 #### Building the image
 Build using `docker build` use the tag `cc:build` and use the current path as build context. Be sure to point docker to the `Dockerfile.build` Dockerfile.
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
 
-    ```shell
-    docker build -t cc:build -f Dockerfile.build .
-    ``` 
+```shell
+docker build -t cc:build -f Dockerfile.build .
+```
 
 </details>
 
@@ -131,8 +128,7 @@ The directory `troubleshooting` contains more or less the same Dockerfiles as `b
 
 > You can also use `curl http://localhost:8080/api/v1/int` in a second terminal.
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
   
     - 1945
     - Docker: Where am I?
@@ -161,8 +157,7 @@ HARRRRR There be two flags hidden! Go and find them!
 
 Go the the directory `capture-the-flag` and run `./startapp.sh`
 
-<details>
-  <summary>spoiler</summery>
+<details><summary>spoiler</summary>
 
     - I will bash that coconut out of the tree!
     - Arrrr what are those random numbers?
