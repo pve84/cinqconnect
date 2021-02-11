@@ -1,0 +1,9 @@
+FROM tomcat:9.0.30-jdk8-openjdk
+ARG WAR=target/api-0.0.2-SNAPSHOT.war
+# Run command. This will run a command inside the temporary container.
+RUN apt update && apt install -y maven && apt clean
+COPY /code /project
+# Workdir defines the default location inside the container. Every RUN or COPY after this command will use this location when using a relative path.
+WORKDIR /project
+RUN mvn clean install && cp ${WAR} /usr/local/tomcat/webapps/ROOT.war && rm -r ~/.m2
+EXPOSE 8080
