@@ -25,6 +25,10 @@ The course is divided into 3 parts.
 > **The application:**  
 > The application running in the container is a simple Java Spring Boot API example which is slightly altered for this course. The application is used to verify if images is was correctly build and the container is running properly. 
 
+If you have any questions please ask. You can also look at the Docker documentation which is excellent!
+- [Commandline reference](https://docs.docker.com/engine/reference/run/)
+- [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+
 ## Setup your environment
 > Be sure to have Visual Studio Code and the Remote developenment extension installed
 - Open VS Code
@@ -36,7 +40,7 @@ The course is divided into 3 parts.
 - Click `Open Folder`
 - Select `cinqconnect`
 - Click `Ok`
-> If you do not have a Terminal windows at the bottom of your editor open a new one by using the shotcut ``Control + ` ``
+> If you do not have a terminal window at the bottom of your editor open a new one by using the shotcut ``Control + ` ``
 
 ## 1. Building images
 Go to the directory `building-images`. There are 3 Dockerfiles and 1 directory called `code`
@@ -60,7 +64,7 @@ mvn clean install -f ./code
 
 </details>
 
-This will take a while but the result is a file called `api-0.0.2-SNAPSHOT.war` which is located under `./code/target` 
+This will take a short while but the result is a file called `api-0.0.2-SNAPSHOT.war` which is located under `./code/target` 
 
 #### Building the image
 Now we can build the image. To start the build use `docker build`. Use the tag `cc:manual` and the current path as build context.
