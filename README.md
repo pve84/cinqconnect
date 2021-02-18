@@ -23,7 +23,7 @@ The course is divided into 3 parts.
     * There are 2 ASCII art flag hidden somewhere in the container. It's up to you to find them. Happy hunting!
 
 > **The application:**  
-> The application running in the container is a simple Java Spring Boot API example which is slightly altered for this course. The application is used to verify if images is correct and the container is running. 
+> The application running in the container is a simple Java Spring Boot API example which is slightly altered for this course. The application is used to verify if images is was correctly build and the container is running properly. 
 
 ## Setup your environment
 > Be sure to have Visual Studio Code and the Remote developenment extension installed
