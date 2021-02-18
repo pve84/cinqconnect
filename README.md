@@ -36,7 +36,7 @@ The course is divided into 3 parts.
 - Click `Open Folder`
 - Select `cinqconnect`
 - Click `Ok`
-> If you do not have a Terminal windows at the bottom of your editor open a new one by using the shotcut `Control + `
+> If you do not have a Terminal windows at the bottom of your editor open a new one by using the shotcut ``Control + ` ``
 
 ## 1. Building images
 Go to the directory `building-images`. There are 3 Dockerfiles and 1 directory called `code`
