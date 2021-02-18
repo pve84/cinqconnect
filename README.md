@@ -5,7 +5,7 @@
       \ \ \  | |____ _| |_| |\  | |__| |  | |___| |__| | |\  | |\  | |___| |____   | |     / / / 
        \_\_\  \_____|_____|_| \_|\___\_\   \_____\____/|_| \_|_| \_|______\_____|  |_|    /_/_/  
 # Containerization
-Welcome to the first edition of CINQ Connect! During this course you will learn the basics of building images, running containers and a bit of troubleshooting. 
+Welcome to the first edition of CINQ Connect! During this course you will learn the basics of building images and a bit of troubleshooting. 
 
 ## Prerequisites
 - [Visual Studio Code](https://code.visualstudio.com/download)
