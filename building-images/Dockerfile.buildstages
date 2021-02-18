@@ -1,6 +1,6 @@
 ARG WAR=target/api-0.0.2-SNAPSHOT.war
 # Using "as" the name the stage so it can be referenced by name later on.
-FROM maven as buildstage
+FROM amd64/maven:3.6.3-jdk-11-slim as buildstage
 WORKDIR /project
 COPY ./code /project
 RUN mvn clean install
